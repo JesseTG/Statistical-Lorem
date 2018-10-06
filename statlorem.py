@@ -72,8 +72,8 @@ class Analysis:
 				try:
 					self.appearances[i][j] /= total
 				except:
-					print self.appearances[i][j]
-					print total
+					print(self.appearances[i][j])
+					print(total)
 	def generate_probabilities(self):
 		""" 
 			Fill array of probabilities according to the normalized values of appearances.
@@ -145,4 +145,4 @@ def ipsum(type_of_text, paragraphs, words = 40):
 	return '\n\n'.join(final)
 
 if __name__=="__main__":
-	print ipsum('scifi', 2, 60)
+	print(ipsum('scifi', 2, 60))
